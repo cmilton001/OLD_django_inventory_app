@@ -24,6 +24,6 @@ urlpatterns = [
     #path('', admin.site.urls),
 
 
-    path('inventory_app/', views.index, name='index'),
+    path('inventory_app/', views.index, name='index'), # we can add urls here but generally we keep those seperate in urls.py file in app and include it here. 
 
 ]
