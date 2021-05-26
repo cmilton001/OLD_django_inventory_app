@@ -21,7 +21,10 @@ from productapp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    #path('', admin.site.urls),
+    path('', admin.site.urls),
     path('inventory_app/', include('productapp.urls')),
-
+    # path('inventory_app/', include('productapp.urls', namespace='productapp')),
+    #path('index/', views.index, name='index'),
+    # path('index/', views.index, name='index'),
+    # url(r'^$', views.index, name='index'),
 ]
