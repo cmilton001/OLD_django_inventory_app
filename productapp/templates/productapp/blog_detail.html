@@ -1,0 +1,11 @@
+{% extends '../base.html' %}
+
+{% block title %}Blog Detail{% endblock title %}
+
+{% block content %}
+    <h1>{{ myblog.title }}</h1>
+    {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+    {{ myblog.text }} <br>
+    {{ myblog.created_date }} <br>
+    {{ myblog.published_date }} <br>
+{% endblock content %}

@@ -1,0 +1,3 @@
+py manage.py makemigrations productapp
+py manage.py migrate productapp
+py manage.py runserver
